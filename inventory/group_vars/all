@@ -1,10 +1,10 @@
 ---
 service:
-  service_telnet:     yes  # disabled: yes, no
-  service_ftp:        yes  # disabled: yes, no
-  service_www:        yes  # disabled: yes, no
-  ssh_port:           9212 # disabled: yes, no
-  service_www-ssl:    yes  # disabled: yes, no
-  service_api:        yes  # disabled: yes, no
-  service_winbox:     yes  # disabled: yes, no
-  service_api-ssl:    yes  # disabled: yes, no
+  service_telnet:     yes           # disabled: yes, no
+  service_ftp:        yes           # disabled: yes, no
+  service_www:        yes           # disabled: yes, no
+  ssh_port:           9212          # port ssh 
+  service_www-ssl:    yes           # disabled: yes, no
+  service_api:        yes           # disabled: yes, no
+  service_winbox:     yes           # disabled: yes, no
+  service_api-ssl:    yes           # disabled: yes, no
