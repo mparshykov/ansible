@@ -1,0 +1,14 @@
+---
+    - name:  service
+      routeros_command:
+        commands:
+           - /ip service set telnet disabled={{ item.service_telnet }
+           - /ip service set ftp disabled={{ item.service_ftp }
+           - /ip service set www disabled={{ item.service_www }}
+           - /ip service set ssh port={{ item.ssh_port }}
+           - /ip service set www-ssl disabled={{ item.service_www-ssl }
+           - /ip service set api disabled={{ item.service_api }
+           - /ip service set winbox disabled={{ item.service_winbox }
+           - /ip service set api-ssl disabled={{ item.service_api-ssl }
+           with_items:
+           - "{{ service }}"
